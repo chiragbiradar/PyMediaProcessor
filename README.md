@@ -33,8 +33,8 @@ curl -X POST http://localhost:5000/convert-video-to-audio -H "Content-Type: mult
 curl -X POST http://localhost:5001/watermark -H "Content-Type: multipart/form-data" -F "video_file=@test.mp4" -F "logo_file=@logo.jpg" -F "location_choice=right" -H "username: test_user" -o uploaded_video.mp4
 ```
 ## System Architecture Overview
+![architecture_design drawio](https://github.com/chiragbiradar/PyMediaProcessor/assets/78417411/3db2441c-c349-4304-9dc7-f5d0dc4502d7)
 
-![architecture_design drawio](https://github.com/chiragbiradar/Vidyo_assignment/assets/78417411/a7d60542-19eb-48cb-9f13-3bc20aa5d454)
 
 The API follows a robust and scalable architecture to handle user requests for processing video files. The workflow is orchestrated through multiple components, ensuring efficient handling and processing of user requests.
 
